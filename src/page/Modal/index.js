@@ -20,9 +20,7 @@ export default function Modal() {
                     aria-label="Close"
                   ></button>
                 </div>
-                <div className="modal-body">
-                  <p>Modal body text goes here.</p>
-                </div>
+                <div className="modal-body">Modal body text goes here.</div>
                 <div className="modal-footer">
                   <button
                     className="btn btn-secondary mr-10"

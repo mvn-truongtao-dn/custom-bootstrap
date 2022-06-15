@@ -13,9 +13,8 @@ export default function ItemRadio(props) {
         onChange={props.onChange}
       />
       <label
-        htmlFor=""
+        htmlFor={`btnradio${props.id}`}
         className={`btn btn-outline-primary ${props.activeRadio}`}
-        for={`btnradio${props.id}`}
       >
         {props.item}
       </label>

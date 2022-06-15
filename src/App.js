@@ -3,7 +3,7 @@ import "./assets/scss/styles.scss";
 import Accordion from "./page/Accordions/Accordion";
 import Accordion2 from "./page/Accordions/Accordion2";
 // import Navbar from "./components/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Alerts from "./page/Alerts";
 import Badge from "./page/Badge";
 import Buttons from "./page/Buttons";
@@ -35,6 +35,7 @@ function App() {
       <Header></Header>
       <div className="page-main">
         <Routes>
+          <Route path="*" element={<Navigate to="/accordion" replace></Navigate>}></Route>
           <Route path="/accordion" element={<Accordion2 />}></Route>
           <Route path="/alerts" element={<Alerts />}></Route>
           <Route path="/badge" element={<Badge />}></Route>
@@ -58,7 +59,6 @@ function App() {
           <Route path="/tooltips" element={<Tooltips />}></Route>
           <Route path="/scrollspy" element={<Scrollspy />}></Route>
           <Route path="/breadcrumb" element={<Breadcrumb />}></Route>
-
         </Routes>
       </div>
     </div>

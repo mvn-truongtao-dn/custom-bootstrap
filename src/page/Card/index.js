@@ -11,7 +11,7 @@ export default function Card() {
       <h2>Listgroups</h2>
       <div className="block-content">
         <div className="card" style={{ width: "18rem" }}>
-          <div onHove className="card-header">
+          <div className="card-header">
             Featured
           </div>
           <ul className="list-group list-group-flush">
@@ -168,13 +168,13 @@ export default function Card() {
                 </li>
               </ul>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
+            <div className="card-body">
+              <h5 className="card-title">Special title treatment</h5>
+              <p className="card-text">
                 With supporting text below as a natural lead-in to additional
                 content.
               </p>
-              <a href="#" class="btn btn-primary">
+              <a href="#" className="btn btn-primary">
                 Go somewhere
               </a>
             </div>

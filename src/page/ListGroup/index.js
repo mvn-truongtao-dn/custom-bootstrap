@@ -5,26 +5,26 @@ export default function ListGroup() {
     <>
       <h2>Basic example</h2>
       <div className="block-content">
-        <ul class="list-group">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
+        <ul className="list-group">
+          <li className="list-group-item">An item</li>
+          <li className="list-group-item">A second item</li>
+          <li className="list-group-item">A third item</li>
+          <li className="list-group-item">A fourth item</li>
+          <li className="list-group-item">And a fifth one</li>
         </ul>
       </div>
       <h2>Active items</h2>
       <div className="block-content">
         <ul className="list-group">
-          <li class="list-group-item active" aria-current="true">
+          <li className="list-group-item active" aria-current="true">
             An item
           </li>
-          <li class="list-group-item disabled" aria-disabled="true">
+          <li className="list-group-item disabled" aria-disabled="true">
             A second item
           </li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
+          <li className="list-group-item">A third item</li>
+          <li className="list-group-item">A fourth item</li>
+          <li className="list-group-item">And a fifth one</li>
         </ul>
       </div>
       <h2> Flush</h2>
@@ -204,7 +204,7 @@ export default function ListGroup() {
           <li className="list-group-item">
             <input
               type="checkbox"
-              class="form-check-input mr-10"
+              className="form-check-input mr-10"
               value=""
               aria-label="..."
             />
@@ -213,7 +213,7 @@ export default function ListGroup() {
           <li className="list-group-item">
             <input
               type="checkbox"
-              class="form-check-input mr-10"
+              className="form-check-input mr-10"
               value=""
               aria-label="..."
             />

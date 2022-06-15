@@ -35,11 +35,11 @@
 }
 .example-external-content {
   .collapse {
-    overflow: none;
-    max-height: 200px;
+    // overflow: none;
+    // height: 200px;
     &.show {
-      max-height: 0;
-      overflow: hidden;
+      height: 80px;
+      //   overflow: hidden;
     }
   }
 }
@@ -81,6 +81,9 @@
   padding: 0.25rem 0.5rem;
 }
 .navbar-dark {
+  .navbar-brand{
+    color: white;
+  }
   .navbar-toggle {
     border: 1px solid rgba(255, 255, 255, 0.1);
     .navbar-toggle-icon {
