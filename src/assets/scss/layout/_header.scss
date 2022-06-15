@@ -9,11 +9,6 @@
   left: 0;
   position: fixed;
   .navbar {
-    // height: 100vh;
-    // float: left;
-    // padding: 1rem 3rem;
-    // z-index: 1200;
-    // position: fixed;
     .navbar-title {
       color: map-get($map: $colors, $key: bs-primary-rgba);
     }
@@ -21,6 +16,12 @@
       padding: 0.5rem 0;
       .navbar-link {
         color: map-get($map: $colors, $key: bs-secondary-rgba);
+        &:hover {
+          color: map-get($map: $colors, $key: bs-primary-rgba);
+        }
+        &.active {
+          color: map-get($map: $colors, $key: bs-primary-rgba);
+        }
       }
     }
   }

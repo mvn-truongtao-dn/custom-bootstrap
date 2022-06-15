@@ -24,8 +24,8 @@ export default function Buttons() {
           Button
         </button>
         <input type="button" className="btn btn-primary" value="Input" />
-        <input class="btn btn-primary" type="submit" value="Submit" />
-        <input class="btn btn-primary" type="reset" value="Reset" />
+        <input className="btn btn-primary" type="submit" value="Submit" />
+        <input className="btn btn-primary" type="reset" value="Reset" />
       </div>
       <h2>Outline buttons</h2>
       <div className="block-content">
