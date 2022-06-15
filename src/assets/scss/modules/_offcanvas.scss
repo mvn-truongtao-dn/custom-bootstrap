@@ -1,0 +1,90 @@
+.offcanvas {
+  position: fixed;
+  padding: 1rem;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  z-index: 1201;
+
+  .offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &.offcanvas-end {
+    right: -350px;
+    top: 0;
+    transition: right 0.3s linear;
+    height: 100vh;
+    width: 350px;
+    &.show {
+      right: 0;
+      transition: right 0.3s linear;
+    }
+  }
+  &.offcanvas-start {
+    left: -350px;
+    top: 0;
+    height: 100vh;
+    width: 350px;
+    transition: left 0.3s linear;
+    &.show {
+      left: 0;
+      transition: left 0.3s linear;
+    }
+  }
+  &.offcanvas-top {
+    top: -300px;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    transition: top 0.3s linear;
+    &.show {
+      top: 0;
+      transition: top 0.3s linear;
+    }
+  }
+  &.offcanvas-bottom {
+    bottom: -300px;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    transition: bottom 0.3s linear;
+    &.show {
+      bottom: 0;
+      transition: bottom 0.3s linear;
+    }
+  }
+}
+.offcanvas-backdrop {
+  &.fade {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1200;
+    &.show {
+      display: block;
+    }
+  }
+}
+.offcanvas-body {
+  margin-top: 1rem;
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    .nav-item {
+      padding: 0.5rem 0;
+      .nav-link {
+        padding: 0;
+      }
+      .btn {
+        padding: 0;
+        line-height: 0;
+        color: rgba(0, 0, 0, 0.55);
+      }
+    }
+  }
+}

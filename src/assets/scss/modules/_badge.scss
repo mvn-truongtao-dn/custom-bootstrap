@@ -1,0 +1,61 @@
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  border-radius: 0.25em;
+  line-height: 1;
+  font-size: 0.75em;
+  font-weight: map-get($map: $font-weight, $key: bold);
+}
+.bg-primary {
+  background-color: map-get($map: $colors, $key: bs-primary-rgba) !important;
+  color: map-get($map: $colors, $key: white);
+}
+.bg-secondary {
+  background-color: map-get($map: $colors, $key: bs-secondary-rgba) !important;
+  color: map-get($map: $colors, $key: white);
+}
+.bg-success {
+  background-color: map-get($map: $colors, $key: bs-success-rgba) !important;
+  color: map-get($map: $colors, $key: white);
+}
+.bg-warning {
+  background-color: map-get($map: $colors, $key: bs-warning-rgba) !important;
+  color: map-get($map: $colors, $key: txt-black);
+}
+.bg-light {
+    background-color: map-get($map: $colors, $key: bs-light-rgba) !important;
+  color: map-get($map: $colors, $key: txt-black);
+}
+.bg-dark {
+    background-color: map-get($map: $colors, $key: bs-dark-rgba) !important;
+  color: map-get($map: $colors, $key: white);
+}
+.bg-info {
+    background-color: map-get($map: $colors, $key: bs-info-rgba) !important;
+  color: map-get($map: $colors, $key: txt-black);
+}
+.bg-danger {
+  background-color: map-get($map: $colors, $key: bs-danger-rgba) !important;
+  color: map-get($map: $colors, $key: white);
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.top-0 {
+  top: 0;
+}
+.start-100 {
+  left: 100%;
+}
+.translate-middle {
+  transform: translate(-50%, -50%);
+}
+.visually-hidden {
+  display: none;
+}
+.rounded-pill {
+  border-radius: 50rem;
+}

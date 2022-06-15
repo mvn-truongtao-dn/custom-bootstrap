@@ -1,0 +1,7 @@
+.page-main {
+  @include pxRem(padding, 30 30);
+  min-height: 100vh;
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px;
+}

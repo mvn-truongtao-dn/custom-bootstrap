@@ -1,0 +1,272 @@
+.btn {
+  display: inline-block;
+  font-weight: map-get($map: $font-weight, $key: normal);
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: white;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  // @include pxRem(margin, 4px 2px);
+  padding: 0.375rem 0.75rem;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  position: relative;
+  z-index: 1200;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:disabled {
+    opacity: 0.65;
+    pointer-events: none;
+    color: map-get($map: $colors, $key: red);
+  }
+}
+.disabled {
+  opacity: 0.65;
+  pointer-events: none;
+  color: map-get($map: $colors, $key: bs-secondary-rgba);
+}
+.btn-primary {
+  @include block-color(
+    map-get($colors, bs-primary-rgba),
+    map-get($colors, white)
+  );
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-primary-rgba), 0.4) solid 3px;
+  }
+  &:hover {
+    @include block-color(
+      map-get($colors, primary-active),
+      map-get($colors, white)
+    );
+  }
+  &.active {
+    @include block-color(
+      map-get($colors, primary-active),
+      map-get($colors, white)
+    );
+  }
+}
+
+.btn-secondary {
+  @include block-color(
+    map-get($colors, bs-secondary-rgba),
+    map-get($colors, white)
+  );
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-secondary-rgba), 0.4) solid
+      3px;
+  }
+}
+.btn-success {
+  @include block-color(
+    map-get($colors, bs-success-rgba),
+    map-get($colors, white)
+  );
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-success-rgba), 0.4) solid 3px;
+  }
+}
+.btn-danger {
+  @include block-color(
+    map-get($colors, bs-danger-rgba),
+    map-get($colors, white)
+  );
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-danger-rgba), 0.4) solid 3px;
+  }
+}
+.btn-warning {
+  @include block-color(
+    map-get($colors, bs-warning-rgba),
+    map-get($colors, txt-black)
+  );
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-warning-rgba), 0.4) solid 3px;
+  }
+}
+.btn-info {
+  @include block-color(
+    map-get($colors, bs-info-rgba),
+    map-get($colors, txt-black)
+  );
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-info-rgba), 0.4) solid 3px;
+  }
+}
+.btn-light {
+  @include block-color(
+    map-get($colors, bs-light-rgba),
+    map-get($colors, txt-black)
+  );
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-secondary-rgba), 0.15) solid
+      3px;
+  }
+}
+.btn-dark {
+  @include block-color(map-get($colors, bs-dark-rgba), map-get($colors, white));
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-dark-rgba), 0.4) solid 3px;
+  }
+}
+.btn-link {
+  @include block-color(
+    map-get($colors, white),
+    map-get($colors, bs-primary-rgba)
+  );
+  text-decoration: underline;
+}
+.btn-outline-primary {
+  @include block-color(
+    map-get($colors, white),
+    map-get($colors, bs-primary-rgba)
+  );
+  border: map-get($map: $colors, $key: bs-primary-rgba) solid 1px;
+  &:hover {
+    @extend .btn-primary;
+  }
+  &.active {
+    @include block-color(
+      map-get($colors, bs-primary-rgba),
+      map-get($colors, white)
+    );
+  }
+}
+.btn-outline-secondary {
+  @include block-color(
+    map-get($colors, white),
+    map-get($colors, bs-secondary-rgba)
+  );
+  border: map-get($map: $colors, $key: bs-secondary-rgba) solid 1px;
+  &:hover {
+    @extend .btn-secondary;
+  }
+}
+.btn-outline-success {
+  @include block-color(
+    map-get($colors, white),
+    map-get($colors, bs-success-rgba)
+  );
+  border: map-get($map: $colors, $key: bs-success-rgba) solid 1px;
+  &:hover {
+    @extend .btn-success;
+  }
+}
+.btn-outline-warning {
+  @include block-color(
+    map-get($colors, white),
+    map-get($colors, bs-warning-rgba)
+  );
+  border: map-get($map: $colors, $key: bs-warning-rgba) solid 1px;
+  &:hover {
+    @extend .btn-warning;
+  }
+}
+.btn-outline-danger {
+  @include block-color(
+    map-get($colors, white),
+    map-get($colors, bs-danger-rgba)
+  );
+  border: map-get($map: $colors, $key: bs-danger-rgba) solid 1px;
+  &:hover {
+    @extend .btn-danger;
+  }
+}
+.btn-outline-info {
+  @include block-color(map-get($colors, white), map-get($colors, bs-info-rgba));
+  border: map-get($map: $colors, $key: bs-info-rgba) solid 1px;
+  &:hover {
+    @extend .btn-info;
+  }
+}
+.btn-outline-light {
+  @include block-color(
+    map-get($colors, white),
+    map-get($colors, bs-light-rgba)
+  );
+  border: map-get($map: $colors, $key: bs-light-rgba) solid 1px;
+  &:hover {
+    @extend .btn-light;
+  }
+}
+.btn-outline-dark {
+  @include block-color(map-get($colors, white), map-get($colors, bs-dark-rgba));
+  border: map-get($map: $colors, $key: bs-dark-rgba) solid 1px;
+  &:hover {
+    @extend .btn-dark;
+  }
+}
+.btn-lg {
+  font-size: $font-size-lg;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+.btn-sm {
+  font-size: $font-size-sm;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.2rem;
+}
+.btn-group {
+  position: relative;
+  vertical-align: middle;
+  z-index: 100;
+  .btn {
+    margin: 0;
+  }
+  .btn:not(:last-child) {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .btn-group-vertical {
+    display: inline-flex;
+  }
+}
+.btn-group-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  .btn {
+    border-radius: 0;
+    &:first-child {
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+    &:last-child {
+      border-bottom-left-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+  }
+}
+.btn-check {
+  position: absolute;
+  pointer-events: none;
+  clip: rect(0, 0, 0, 0);
+}
+.btn-close {
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
+  width: 1em;
+  height: 1em;
+  border: none;
+  opacity: 0.5;
+  box-sizing: content-box;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+.btn-close-white {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}

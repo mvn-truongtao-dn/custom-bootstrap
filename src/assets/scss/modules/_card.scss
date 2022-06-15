@@ -1,0 +1,70 @@
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  flex: 1;
+  position: relative;
+  //   align-items: center;
+
+  .card-text {
+    @include pxRem(margin, 12 0);
+  }
+  .card-subtitle {
+    color: #6c757d;
+    font-weight: map-get($map: $font-weight, $key: medium);
+  }
+  .card-link {
+    color: map-get($map: $colors, $key: bs-primary-rgba);
+    text-decoration: underline;
+    font-weight: map-get($map: $font-weight, $key: normal);
+  }
+  .card-header {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    line-height: 24px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .card-footer {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    line-height: 24px;
+    background-color: rgba(0, 0, 0, 0.03);
+    &.text-muted {
+      color: #6c757d;
+    }
+  }
+  .card-img-overlay {
+    position: absolute;
+    padding: 1rem 0.75rem;
+  }
+  
+
+  .card-header-pills {
+  }
+}
+.card-body {
+  padding: 1rem 1rem;
+  flex: 1;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: start;
+}
+.text-center {
+  text-align: center;
+}
+.card-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.bg-primary {
+  background-color: map-get($map: $colors, $key: bs-primary-rgba);
+}
+.text-white {
+  color: map-get($map: $colors, $key: white);
+}
+.border-primary {
+  border: 1px solid map-get($map: $colors, $key: bs-primary-rgba);
+}

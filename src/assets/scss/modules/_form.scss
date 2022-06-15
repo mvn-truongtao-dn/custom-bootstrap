@@ -1,0 +1,98 @@
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+input[type="search"],
+select,
+textarea {
+  @include pxRem("padding", 8);
+  @include pxRem("height", 40);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+  border: 1px solid map-get($colors, border-gray);
+  color: map-get($colors, txt-primary);
+  background: map-get($colors, white);
+  outline: none;
+  transition: border-color 0.4s;
+  border-radius: 0.25rem;
+  display: block;
+  -webkit-appearance: none;
+  transition: border-color 0.4s, box-shadow 0.4s;
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-primary-rgba), 0.4) solid 3px;
+  }
+  &:disabled,
+  &.disabled {
+    background: map-get($colors, bg-gray-light);
+    border-color: map-get($colors, bg-gray-light);
+    color: map-get($colors, txt-disabled);
+  }
+  &::placeholder {
+    color: map-get($colors, txt-disabled);
+  }
+  &[readonly] {
+    border-color: map-get($colors, border-gray);
+    box-shadow: none;
+  }
+}
+
+// Remove icon eye in Edge
+input {
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+  }
+}
+
+// Prevent resize horizontal
+textarea {
+  resize: vertical;
+}
+
+// Label
+label {
+  @include pxRem(margin-bottom, 5);
+  display: block;
+}
+
+// Group form control
+.form-group {
+  @include pxRem(margin-bottom, 20);
+}
+.btn-toolbar {
+  display: flex;
+  align-items: center;
+  .input-group {
+    width: auto;
+  }
+}
+.input-group {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  .input-group-text {
+    padding: 0.6875rem;
+    background-color: map-get($map: $colors, $key: bs-light-rgba);
+    border: 1px solid map-get($colors, border-gray);
+    border-right: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .form-control {
+    display: inline-block;
+    width: 1%;
+    flex: 1;
+  }
+}
+.form-check-label {
+  margin-bottom: 0;
+}
+input[type="checkbox"] {
+  &:focus {
+    outline: rgba(map-get($map: $colors, $key: bs-primary-rgba), 0.4) solid 3px;
+  }
+}

@@ -1,0 +1,147 @@
+.popover {
+  position: absolute;
+  top: 0;
+  background: map-get($map: $colors, $key: white);
+  max-width: 250px;
+  width: 250px;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  z-index: 1300;
+  .popover-header {
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    color: #808080;
+    font-weight: map-get($map: $font-weight, $key: medium);
+  }
+  .popover-body {
+    line-height: 1.5rem;
+    padding: 0.5rem;
+  }
+  .popover-arrow {
+    position: absolute;
+    top: 0;
+    transform: translate(0, 27px);
+  }
+  .popover-arrow {
+    &::after,
+    &::before {
+      content: "";
+      border-style: solid;
+      border-color: transparent;
+      position: absolute;
+      display: inline-block;
+    }
+  }
+}
+.bs-popover-end {
+  .popover-arrow {
+    left: calc(0.5rem - 1rem);
+    transform: translate(0, 32px);
+    &::before {
+      border-style: solid;
+      border-color: transparent;
+      border-width: 0.5rem 0.5rem 0.5rem 0;
+      border-right-color: rgba(0, 0, 0, 0.25);
+    }
+    &::after {
+      left: 1px;
+      border-width: 0.5rem 0.5rem 0.5rem 0;
+      border-right-color: #fff;
+    }
+  }
+}
+.bs-popover-bottom {
+  .popover-arrow {
+    //   top: calc(0.5rem - 1rem);
+    transform: translate(100px, -8px);
+    &::before {
+      border-width: 0 0.5rem 0.5rem 0.5rem;
+      border-bottom-color: rgba(0, 0, 0, 0.25);
+    }
+    &::after {
+      bottom: -10px;
+      border-width: 0 0.5rem 0.5rem 0.5rem;
+      border-bottom-color: #fff;
+    }
+  }
+}
+.bs-popover-top {
+  .popover-arrow {
+    //   top: calc(0.5rem - 1rem);
+    transform: translate(90px, 95px);
+    &::before {
+      top: 1px;
+      border-width: 0.5rem 0.5rem 0rem 0.5rem;
+      border-top-color: rgba(0, 0, 0, 0.25);
+    }
+    &::after {
+      border-width: 0.5rem 0.5rem 0rem 0.5rem;
+      border-top-color: #fff;
+    }
+  }
+}
+.bs-popover-start {
+  .popover-arrow {
+    //   top: calc(0.5rem - 1rem);
+    transform: translate(246px, 35px);
+    &::before {
+      left: 1px;
+      border-width: 0.5rem 0rem 0.5rem 0.5rem;
+      border-left-color: rgba(0, 0, 0, 0.25);
+    }
+    &::after {
+      border-width: 0.5rem 0rem 0.5rem 0.5rem;
+      border-left-color: #fff;
+    }
+  }
+}
+.block-content {
+  .popover {
+    &.bs-popover-bottom {
+      transform: translate(0, 65px) !important;
+    }
+  }
+  .popover {
+    &.bs-popover-top {
+      transform: translate(0, -85px);
+    }
+  }
+  .popover {
+    &.bs-popover-end {
+      transform: translate(150px, 0);
+    }
+  }
+  .popover {
+    &.bs-popover-start {
+      transform: translate(-255px, 0);
+    }
+  }
+}
+
+.tooltip {
+  .popover {
+    &.bs-popover-bottom {
+      transform: translate(240px, 65px) !important;
+    }
+  }
+  .popover {
+    &.bs-popover-top {
+      transform: translate(100px, -85px);
+    }
+  }
+  .popover {
+    &.bs-popover-end {
+      transform: translate(560px, 0);
+    }
+  }
+  .popover {
+    &.bs-popover-start {
+      transform: translate(-255px, 0);
+    }
+  }
+}
+.popover-example1 {
+  .popover {
+    transform: translate(245px, 5px) !important;
+  }
+}

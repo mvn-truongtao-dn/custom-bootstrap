@@ -1,0 +1,30 @@
+.placeholder {
+  background-color: red;
+  min-height: 1rem;
+  display: inline-block;
+  cursor: wait;
+  opacity: 0.5;
+  &.placeholder-lg {
+    min-height: 1.2rem;
+  }
+  &.placeholder-sm {
+    min-height: 0.8rem;
+  }
+  &.placeholder-xs {
+    min-height: 0.5rem;
+  }
+}
+.placeholder-glow {
+  .placeholder {
+    animation-name: placeholder-glow 2s ease-in-out infinite;
+    -webkit-animation: placeholder-glow 2s ease-in-out infinite;
+  }
+}
+@keyframes placeholder-glow {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.2;
+  }
+}

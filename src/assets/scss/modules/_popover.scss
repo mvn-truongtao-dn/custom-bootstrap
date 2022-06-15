@@ -1,0 +1,30 @@
+.dismiss-popover {
+  .popover {
+    &.bs-popover-end {
+      transform: translate(180px, 0) !important;
+    }
+  }
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1199;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.hover:hover {
+  color: red;
+}
+.popover-disable {
+  position: relative;
+  z-index: 1200;
+  .popover {
+    &.bs-popover-end {
+      transform: translate(88px, -20px) !important;
+    }
+  }
+}

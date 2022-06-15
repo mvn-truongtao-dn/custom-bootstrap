@@ -1,0 +1,38 @@
+.collapse {
+  &:not(.show) {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+  &.show {
+    height: 100px;
+    transition: height 0.3s linear;
+  }
+}
+.collapse-horizontal {
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+    transform-origin: left;
+    animation: fade_in_show_horizontal 0.75s;
+  }
+}
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(1, 0.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes fade_in_show_horizontal {
+  0% {
+    transform: scale(0.1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

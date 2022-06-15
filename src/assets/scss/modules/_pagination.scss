@@ -1,0 +1,56 @@
+.pagination {
+  display: flex;
+  .page-item {
+    cursor: pointer;
+    // outline: rgba(map-get($map: $colors, $key: bs-primary-rgba), 0.4) solid 3px;
+    &:first-child {
+      .page-link {
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+    }
+    &:last-child {
+      .page-link {
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+      }
+    }
+    .page-link {
+      padding: 0.75rem;
+
+      border: 1px solid rgba($color: #000000, $alpha: 0.1);
+      &:not(:last-child) {
+        border-right: 0;
+      }
+      color: map-get($map: $colors, $key: bs-primary-rgba);
+      &:hover {
+        background-color: rgba($color: #000000, $alpha: 0.1);
+      }
+      &:focus {
+        outline: rgba(map-get($map: $colors, $key: bs-primary-rgba), 0.4) solid
+          3px;
+      }
+    }
+    &.active {
+      .page-link {
+        background-color: map-get($map: $colors, $key: bs-primary-rgba);
+        color: map-get($map: $colors, $key: white);
+      }
+    }
+  }
+}
+.pagination-lg {
+  .page-item {
+    .page-link {
+      padding: 1rem 1.25rem;
+    }
+  }
+}
+.pagination-sm {
+    .page-item {
+      .page-link {
+        padding: 0.5rem 0.5remrem;
+      }
+    }
+  }
+  

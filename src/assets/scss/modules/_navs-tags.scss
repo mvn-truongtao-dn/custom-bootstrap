@@ -1,0 +1,76 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  .disabled {
+    opacity: 0.65;
+    color: map-get($map: $colors, $key: bs-secondary-rgba);
+    pointer-events: none;
+  }
+  &.nav-tags {
+    margin-right: -0.5rem;
+    margin-bottom: -0.5rem;
+    margin-left: -0.5rem;
+    border-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    .nav-link {
+      border: 1px solid transparent;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      color: map-get($map: $colors, $key: bs-primary-rgba);
+      margin-bottom: -3px;
+    }
+    .active {
+      color: #495057;
+      background-color: #fff;
+      border-color: #dee2e6 #dee2e6 #fff;
+    }
+
+    .dropdown-toggle {
+      padding: 0.1rem 1rem;
+      &.show {
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-bottom: 0;
+      }
+    }
+    .nav-item {
+      &:hover:not(.active) {
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 0.25rem;
+        border-bottom: 0;
+      }
+    }
+  }
+  &:has(.card-header-tags) {
+    border-bottom: 0;
+  }
+  .nav-link {
+    border-radius: 0.25rem;
+  }
+  .active {
+    color: map-get($map: $colors, $key: white);
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #dee2e6;
+    background-color: map-get($map: $colors, $key: bs-primary-rgba);
+  }
+}
+.nav-link {
+  display: block;
+  padding: 0.45rem 1rem;
+  margin-bottom: -1px;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #0d6efd;
+  &.active-bg {
+    background-color: map-get($map: $colors, $key: bs-primary-rgba);
+    color: white;
+  }
+}
+
+.nav-fill {
+  justify-content: space-between;
+  .nav-link {
+    padding: 0.75rem 3rem;
+  }
+}

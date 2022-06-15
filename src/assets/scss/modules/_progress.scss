@@ -1,0 +1,47 @@
+.progress {
+  height: 1rem;
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  margin: 0.5rem 0;
+  display: flex;
+  .progress-bar {
+    width: 0;
+    background-color: map-get($map: $colors, $key: bs-primary-rgba);
+    height: 100%;
+    border-radius: 0.25rem;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    &:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+.progress-bar-animated {
+  -webkit-animation: 10s linear infinite progress-bar-stripes;
+  animation: 10s linear infinite progress-bar-stripes;
+}
+@keyframes progress-bar-stripes {
+  0% {
+    background-position: 50%;
+  }
+  0% {
+    background-position: 100%;
+  }
+}
+.progress-bar-striped {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
