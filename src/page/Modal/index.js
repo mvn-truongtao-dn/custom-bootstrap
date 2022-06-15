@@ -25,7 +25,7 @@ export default function Modal() {
                 </div>
                 <div className="modal-footer">
                   <button
-                    className="btn btn-secondary"
+                    className="btn btn-secondary mr-10"
                     data-bs-dismiss="modal"
                     type="button"
                   >
