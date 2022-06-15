@@ -4,16 +4,17 @@ import { Link, useLocation, useParams } from "react-router-dom";
 export default function Header() {
   let location = useLocation();
   const address = location.pathname.slice(1);
-
+    console.log(address);
   useEffect(() => {
     const array_link = document.querySelectorAll(".navbar-link");
     for (let i in array_link) {
-      if (array_link[i].href === `http://localhost:3000/${address}`) {
+      if (array_link[i].href === `https://lucent-parfait-d5f01b.netlify.app/${address}`) {
         document
           .querySelector(".page-header .active")
           .classList.remove("active");
         document.getElementById(address).classList.add("active");
-      }
+        
+    }
     }
   });
   return (
