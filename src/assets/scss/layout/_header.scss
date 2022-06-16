@@ -8,7 +8,9 @@
   overflow: scroll;
   left: 0;
   position: fixed;
+
   .navbar {
+    
     .navbar-title {
       color: map-get($map: $colors, $key: bs-primary-rgba);
     }
@@ -24,5 +26,10 @@
         }
       }
     }
+  }
+}
+@include respond-below(large) {
+  .page-header {
+    left: -300px;
   }
 }

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 export default function PopoverDismiss() {
   const [active, setActive] = useState(false);
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
     setActive(true);
   };
   const handleClose = () => {

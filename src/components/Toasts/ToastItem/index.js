@@ -23,7 +23,7 @@ console.log(props.item);
   };
   return (
     <div
-      className={`toast fade show`}
+      className={`toast mb-10 fade show`}
       role="alert"
       id={`live-toast${props.id}`}
       aria-live="assertive"

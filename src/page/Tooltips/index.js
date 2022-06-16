@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import TestTooltips from "../../components/Tooltips/TestTooltips";
 
 export default function Tooltips() {
   const [active, setActive] = useState(false);
@@ -21,15 +22,14 @@ export default function Tooltips() {
   const handleMouseOut = () => {
     setActive(false);
   };
- 
+
   return (
     <div>
-      <h2>Example</h2>
-      <h2>Example</h2>
+      <div className="block-content"></div>
       <h2>Example</h2>
 
       <div className="block-content">
-        <div className="tooltip">
+        <div className="tooltip position-relative flex flex-wrap-wrap gap-1">
           <button
             className="btn btn-secondary mr-10"
             data-bs-toggle="tooltip"
@@ -84,6 +84,10 @@ export default function Tooltips() {
             </div>
           </div>
         </div>
+      </div>
+      <h2>Test</h2>
+      <div className="block-content">
+        <TestTooltips></TestTooltips>
       </div>
     </div>
   );

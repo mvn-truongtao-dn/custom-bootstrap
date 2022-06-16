@@ -54,12 +54,13 @@ export default function Accordion2() {
   });
   return (
     <>
+      <h2>Flush</h2>
       <div className="block-content">
         <div className="accordion accordion-flush" id="accordion-plush-example">
           {renderAccordionItem}
         </div>
       </div>
-      <h2>Example</h2>
+      <h2>Always open</h2>
       <div className="block-content">
         <Accordion />
       </div>

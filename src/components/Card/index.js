@@ -17,12 +17,14 @@ export default function CardItem() {
             build on the Some quick example text to build on the Some quick
             example text to
           </p>
-          <a href="#" className="card-link">
-            Card link
-          </a>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <div className="flex align-items-center justify-content-between">
+            <a href="#" className="card-link">
+              Card link
+            </a>
+            <a href="#" className="btn btn-primary">
+              Go somewhere
+            </a>
+          </div>
         </div>
       </div>
     </>

@@ -10,6 +10,7 @@
 
   .card-text {
     @include pxRem(margin, 12 0);
+    font-weight: map-get($map: $font-weight, $key: normal);
   }
   .card-subtitle {
     color: #6c757d;
@@ -40,7 +41,6 @@
     position: absolute;
     padding: 1rem 0.75rem;
   }
-  
 
   .card-header-pills {
   }
@@ -67,4 +67,14 @@
 }
 .border-primary {
   border: 1px solid map-get($map: $colors, $key: bs-primary-rgba);
+}
+.text-black {
+  color: map-get($map: $colors, $key: black);
+}
+.card {
+  .nav {
+    &.nav-tags {
+      border-bottom: 0;
+    }
+  }
 }

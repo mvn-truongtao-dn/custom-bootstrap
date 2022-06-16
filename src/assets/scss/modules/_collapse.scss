@@ -10,11 +10,19 @@
   }
 }
 .collapse-horizontal {
-  visibility: hidden;
+//   visibility: hidden;
+    width: 0;
+    overflow: auto !important;
+    transition: width 0.25s linear !important;
   &.show {
-    visibility: visible;
-    transform-origin: left;
-    animation: fade_in_show_horizontal 0.75s;
+    // visibility: visible;
+    // transform-origin: left;
+    // animation: fade_in_show_horizontal 0.75s;
+    width: 300px;
+    transition: width 0.25s linear;
+  }
+  &:not(.show) {
+      height: 100px !important;
   }
 }
 @keyframes fade_in_show {

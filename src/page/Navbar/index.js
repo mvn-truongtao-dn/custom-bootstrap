@@ -58,6 +58,18 @@ export default function Navbar() {
                 </button>
               </form>
             </div>
+            <div className="btn-menu-respond">
+              <button
+                className="navbar-toggle"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="collapse"
+                data-bs-target="#offcanvas-navbar"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggle-icon"></span>
+              </button>
+            </div>
           </div>
         </nav>
       </div>
@@ -153,9 +165,8 @@ export default function Navbar() {
       </div>
       <h2>Offcanvas</h2>
       <div className="block-content">
-        <NavbarOffcanvas property="offcanvas-end"/>
+        <NavbarOffcanvas property="offcanvas-end" />
       </div>
-      
     </>
   );
 }

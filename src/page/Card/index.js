@@ -11,9 +11,7 @@ export default function Card() {
       <h2>Listgroups</h2>
       <div className="block-content">
         <div className="card" style={{ width: "18rem" }}>
-          <div className="card-header">
-            Featured
-          </div>
+          <div className="card-header">Featured</div>
           <ul className="list-group list-group-flush">
             <li className="list-group-item">An item</li>
             <li className="list-group-item">A second item</li>
@@ -187,7 +185,7 @@ export default function Card() {
               className="card-img-top"
               alt=""
             ></img>
-            <div className="card-img-overlay">
+            <div className="card-img-overlay text-white">
               <h5 className="card-title">Card title</h5>
               <h6 className="card-subtitle my-5">Card subtitle</h6>
               <p className="card-text">
@@ -195,12 +193,14 @@ export default function Card() {
                 to build on the Some quick example text to build on the Some
                 quick example text to
               </p>
-              <a href="#" className="card-link">
-                Card link
-              </a>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
+              <div className="flex align-items-center justify-content-between">
+                <a href="#" className="card-link">
+                  Card link
+                </a>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
             </div>
           </div>
         </div>

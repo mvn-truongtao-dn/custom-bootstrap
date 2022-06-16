@@ -26,20 +26,37 @@ export default function NestedNav() {
             //   .classList.add("active-bg");
             const cut = array_section["0"].id;
             console.log(cut);
-            const cut1 = array_section[s].id.slice(0,5);
+            const cut1 = array_section[s].id.split("-");
             console.log(cut1);
-            document
-              .querySelector("#scrollspy-example3 .active-bg")
-              .classList.remove("active-bg");
-            document
-              .querySelector(`[data-id=${id}]`)
-              .classList.add("active-bg");
-            // if (cut1 === cut) {
-            //   console.log(`parent:${cut}`);
-            //   document
-            //     .querySelector(`[data-id=${cut}`)
-            //     .classList.add("active-bg");
-            // }
+            console.log(
+              document.querySelectorAll("#scrollspy-example3 .active-bg")
+            );
+            const link_active = document.querySelectorAll(
+              "#scrollspy-example3 .active-bg"
+            );
+            for (let i in link_active) {
+              if (link_active.hasOwnProperty(i)) {
+                const id_active = link_active[i].getAttribute("data-id");
+                console.log(id_active);
+                document
+                .querySelector(`[data-id=${id_active}]`)
+                .classList.remove("active-bg");
+                document
+                  .querySelector(`[data-id=${id}]`)
+                  .classList.add("active-bg");
+                console.log(cut1.indexOf("item1"));
+
+                if (cut1.indexOf(cut) !== -1) {
+                  console.log(`parent:${cut}`);
+                  document
+                    .querySelector(`[data-id=${cut}`)
+                    .classList.add("active-bg");
+                }
+              }
+              // document
+              //   .querySelector("#scrollspy-example3 .active-bg")
+              //   .classList.remove("active-bg");
+            }
           }
         }
       });

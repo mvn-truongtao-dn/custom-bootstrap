@@ -87,7 +87,7 @@ export default function Popovers() {
       {/* <div style={{ width: "100%", height: "2000px" }}></div> */}
       <h2>Four directions</h2>
       <div className="block-content">
-        <div className="flex">
+        <div className="flex flex-wrap-wrap gap-1">
           <PopoverItem status="start"></PopoverItem>
           <PopoverItem status="top"></PopoverItem>
           <PopoverItem status="bottom"></PopoverItem>

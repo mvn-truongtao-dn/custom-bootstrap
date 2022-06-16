@@ -1,10 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import DropDownItem from "../../Dropdown/SingleButton";
 
 export default function ScrollspyExample() {
-  useEffect (() => {
-    const array_section = document.querySelectorAll(".scrollspy-example section");
+  const test = useRef();
+  useEffect(() => {
+    console.log(document.querySelector(".scrollspy-example"));
+    console.log(test.current);
 
+    const array_section = document.querySelectorAll(
+      ".scrollspy-example section"
+    );
     document
       .querySelector(".scrollspy-example")
       .addEventListener("scroll", (e) => {
@@ -54,6 +59,7 @@ export default function ScrollspyExample() {
         </div>
       </nav>
       <div
+        ref={test}
         className="scrollspy-example"
         tabIndex="0"
         data-bs-spy="scroll"
