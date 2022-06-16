@@ -8,7 +8,7 @@ export default function Header() {
   useEffect(() => {
     const array_link = document.querySelectorAll(".navbar-link");
     for (let i in array_link) {
-      if (array_link[i].href === `https://master--lucent-parfait-d5f01b.netlify.app/${address}`) {
+      if (array_link[i].href === `https://lucent-parfait-d5f01b.netlify.app/${address}`) {
         document
           .querySelector(".page-header .active")
           .classList.remove("active");
