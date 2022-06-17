@@ -148,11 +148,11 @@
 .tooltip {
   .popover {
     &.bs-popover-bottom {
-      transform: translate(0, 50%);
+      transform: translate(-15%, 50%);
     }
     &.bs-popover-top {
       top: 0;
-      transform: translate(0, -110%);
+      transform: translate(-15%, -110%);
     }
     &.bs-popover-end {
       transform: translate(55%, -25px);
