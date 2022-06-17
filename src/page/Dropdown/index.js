@@ -12,7 +12,7 @@ export default function Dropdown() {
         <DropDownItem property="btn-secondary"></DropDownItem>
       </div>
       <h2>SingleButton button</h2>
-      <div className="block-content flex">
+      <div className="block-content flex flex-wrap-wrap gap-1">
         <DropDownItem property="btn-primary"></DropDownItem>
         <DropDownItem property="btn-secondary"></DropDownItem>
         <DropDownItem property="btn-success"></DropDownItem>

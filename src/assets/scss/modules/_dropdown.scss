@@ -28,6 +28,10 @@
     border-right: 0;
     border-left: 0.3em solid;
   }
+  .dropdown-menu {
+    top: 0;
+    transform: translate(62%, 0);
+  }
 }
 .dropstart {
   .dropdown-toggle::before {

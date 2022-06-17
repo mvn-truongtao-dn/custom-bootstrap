@@ -98,7 +98,7 @@
 .block-content {
   .popover {
     &.bs-popover-bottom {
-      transform: translate(0, 65px) ;
+      transform: translate(0, 65px);
     }
   }
   .popover {
@@ -118,30 +118,48 @@
   }
 }
 
-.tooltip {
-  .popover {
-    &.bs-popover-bottom {
-      transform: translate(240px, 45px);
-    }
-  }
-  .popover {
-    &.bs-popover-top {
-      transform: translate(100px, -105px);
-    }
-  }
-  .popover {
-    &.bs-popover-end {
-      transform: translate(560px, -25px);
-    }
-  }
-  .popover {
-    &.bs-popover-start {
-      transform: translate(-255px, -25px);
-    }
-  }
-}
+// .tooltip {
+//   .popover {
+//     &.bs-popover-bottom {
+//       transform: translate(240px, 45px);
+//     }
+//   }
+//   .popover {
+//     &.bs-popover-top {
+//       transform: translate(100px, -105px);
+//     }
+//   }
+//   .popover {
+//     &.bs-popover-end {
+//       transform: translate(560px, -25px);
+//     }
+//   }
+//   .popover {
+//     &.bs-popover-start {
+//       transform: translate(-255px, -25px);
+//     }
+//   }
+// }
 .popover-example1 {
   .popover {
     transform: translate(245px, 5px) !important;
+  }
+}
+.tooltip {
+  .popover {
+    &.bs-popover-bottom {
+      transform: translate(0, 50%);
+    }
+    &.bs-popover-top {
+      top: 0;
+      transform: translate(0, -110%);
+    }
+    &.bs-popover-end {
+      transform: translate(55%, -25px);
+    }
+    &.bs-popover-start {
+      top: 0;
+      transform: translate(-105%, -25%);
+    }
   }
 }

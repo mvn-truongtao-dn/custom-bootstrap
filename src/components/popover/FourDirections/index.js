@@ -9,7 +9,7 @@ export default function PopoverItem(props) {
       setActive(!active);
   };
   return (
-    <div>
+    <div className="tooltip position-relative">
       <button
         className="btn btn-secondary mr-10"
         type="button"

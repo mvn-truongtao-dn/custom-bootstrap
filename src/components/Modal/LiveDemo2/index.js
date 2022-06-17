@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import TooltipItem from "../../Tooltips";
 
 export default function ModalLive2(props) {
   const [active, setActive] = useState(false);
@@ -73,16 +72,16 @@ export default function ModalLive2(props) {
                   Button
                 </a>{" "}
                 <div
-          className={`popover fade bs-popover-end ${
-            activeTooltip ? "show" : ""
-          }`}
-        >
-          <div className="popover-arrow"></div>
-          <div className="popover-header">Popover title</div>
-          <div className="popover-body">
-            Popover body content is set in this attribute.
-          </div>
-        </div>
+                  className={`popover fade bs-popover-end ${
+                    activeTooltip ? "show" : ""
+                  }`}
+                >
+                  <div className="popover-arrow"></div>
+                  <div className="popover-header">Popover title</div>
+                  <div className="popover-body">
+                    Popover body content is set in this attribute.
+                  </div>
+                </div>
                 triggers a popover on click
               </p>
             </div>
@@ -100,7 +99,6 @@ export default function ModalLive2(props) {
             </modal>
           </div>
         </div>
-       
       </div>
     </>
   );
