@@ -21,19 +21,29 @@ export default function Pagination() {
         <nav aria-label="">
           <ul className="pagination">
             <li className="page-item disabled">
-              <a href="" className="page-link">Previous</a>
+              <a href="" className="page-link">
+                Previous
+              </a>
             </li>
             <li className="page-item">
-              <a href="" className="page-link">1</a>
+              <a href="" className="page-link">
+                1
+              </a>
             </li>
             <li className="page-item active" aria-current="page">
-              <a href="" className="page-link">2</a>
+              <a href="" className="page-link">
+                2
+              </a>
             </li>
             <li className="page-item">
-              <a href="" className="page-link">3</a>
+              <a href="" className="page-link">
+                3
+              </a>
             </li>
             <li className="page-item ">
-              <a href="" className="page-link">Next</a>
+              <a href="" className="page-link">
+                Next
+              </a>
             </li>
           </ul>
         </nav>
@@ -43,34 +53,64 @@ export default function Pagination() {
         <nav aria-label="">
           <ul className="pagination pagination-lg">
             <li className="page-item disabled">
-              <a href="" className="page-link">Previous</a>
+              <a href="" className="page-link">
+                Previous
+              </a>
             </li>
             <li className="page-item">
-              <a href="" className="page-link">1</a>
+              <a href="" className="page-link">
+                1
+              </a>
             </li>
             <li className="page-item active" aria-current="page">
-              <a href="" className="page-link">2</a>
+              <a href="" className="page-link">
+                2
+              </a>
             </li>
             <li className="page-item">
-              <a href="" className="page-link">3</a>
+              <a href="" className="page-link">
+                3
+              </a>
             </li>
             <li className="page-item ">
-              <a href="" className="page-link">Next</a>
+              <a href="" className="page-link">
+                Next
+              </a>
             </li>
           </ul>
         </nav>
       </div>
       <h2>Alignment</h2>
       <div className="block-content">
-          <nav aria-label="page navigation example">
-              <ul className="pagination justify-content-center">
-                  <li className="page-item"><a href="#" className="page-link">Previous</a></li>
-                  <li className="page-item"><a href="#" className="page-link">1</a></li>
-                  <li className="page-item"><a href="#" className="page-link">2</a></li>
-                  <li className="page-item"><a href="#" className="page-link">3</a></li>
-                  <li className="page-item"><a href="#" className="page-link">Next</a></li>
-              </ul>
-          </nav>
+        <nav aria-label="page navigation example">
+          <ul className="pagination justify-content-center">
+            <li className="page-item">
+              <a href="#" className="page-link">
+                Previous
+              </a>
+            </li>
+            <li className="page-item">
+              <a href="#" className="page-link">
+                1
+              </a>
+            </li>
+            <li className="page-item">
+              <a href="#" className="page-link">
+                2
+              </a>
+            </li>
+            <li className="page-item">
+              <a href="#" className="page-link">
+                3
+              </a>
+            </li>
+            <li className="page-item">
+              <a href="#" className="page-link">
+                Next
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </>
   );

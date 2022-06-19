@@ -28,8 +28,14 @@ export default function Collapse() {
     for (var i = 0; i < array.length; i++) {
       if (document.getElementById(array[i]).classList.contains("show")) {
         document.getElementById(array[i]).classList.remove("show");
+        document
+          .querySelector(`#${array[i]} .card-collapse`)
+          .classList.remove("show");
       } else {
         document.getElementById(array[i]).classList.add("show");
+        document
+          .querySelector(`#${array[i]} .card-collapse`)
+          .classList.add("show");
       }
     }
     if (e.target.getAttribute("aria-expanded") === "true") {
@@ -71,7 +77,11 @@ export default function Collapse() {
           className={`collapse ${activeCollapse ? "show" : ""}`}
           id="collapseExample "
         >
-          <div className="card card-body">
+          <div
+            className={`card card-body card-collapse ${
+              activeCollapse ? "show" : ""
+            }`}
+          >
             Some placeholder content for the collapse component. This panel is
             hidden by default but revealed when the user activates the relevant
             trigger.
@@ -149,7 +159,7 @@ export default function Collapse() {
               className={`collapse multi-collapse`}
               id="multi-collapse-example1"
             >
-              <div className="card card-body">
+              <div className="card card-body card-collapse">
                 Some placeholder content for the first collapse component of
                 this multi-collapse example. This panel is hidden by default but
                 revealed when the user activates the relevant trigger.
@@ -161,7 +171,7 @@ export default function Collapse() {
               className={`collapse multi-collapse`}
               id="multi-collapse-example2"
             >
-              <div className="card card-body">
+              <div className="card card-body card-collapse">
                 Some placeholder content for the first collapse component of
                 this multi-collapse example. This panel is hidden by default but
                 revealed when the user activates the relevant trigger.

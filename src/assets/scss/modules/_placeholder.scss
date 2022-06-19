@@ -21,10 +21,19 @@
   }
 }
 @keyframes placeholder-glow {
-  from {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
     opacity: 0.3;
   }
-  to {
+  75% {
+    opacity: 0.2;
+  }
+  75% {
     opacity: 0.1;
   }
 }

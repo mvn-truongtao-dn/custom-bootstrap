@@ -26,6 +26,9 @@ export default function CardItem() {
             </a>
           </div>
         </div>
+        <div className="card-footer">
+          <div className="text-muted">Last updated 3 mins ago</div>
+        </div>
       </div>
     </>
   );

@@ -185,7 +185,7 @@
     @extend .btn-info;
   }
 }
-.btn-outline-light {
+.btn-outline-light {  
   @include block-color(
     map-get($colors, white),
     map-get($colors, bs-light-rgba)

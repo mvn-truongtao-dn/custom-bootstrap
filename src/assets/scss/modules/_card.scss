@@ -77,4 +77,13 @@
       border-bottom: 0;
     }
   }
+  &.card-collapse {
+      height: 0;
+      overflow-y: auto;
+      transition: height 0.3s linear;
+  }
+  &.show {
+    height: 100px;
+    transition: height 0.3s linear;
+}
 }

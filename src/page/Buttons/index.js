@@ -4,7 +4,7 @@ export default function Buttons() {
   return (
     <>
       <h2>Examples</h2>
-      <div className="block-content">
+      <div className="block-content flex gap-1">
         <button className="btn btn-primary">Primary</button>
         <button className="btn btn-secondary">secondary</button>
         <button className="btn btn-success">success</button>
@@ -16,7 +16,7 @@ export default function Buttons() {
         <button className="btn btn-link">Link</button>
       </div>
       <h2>Button tags</h2>
-      <div className="block-content">
+      <div className="block-content flex gap-1">
         <a href="#" className="btn btn-primary" role="button">
           Link
         </a>
@@ -28,7 +28,7 @@ export default function Buttons() {
         <input className="btn btn-primary" type="reset" value="Reset" />
       </div>
       <h2>Outline buttons</h2>
-      <div className="block-content">
+      <div className="block-content flex gap-1">
         <button className="btn btn-outline-primary" type="button">
           primary
         </button>
@@ -55,16 +55,16 @@ export default function Buttons() {
         </button>
       </div>
       <h2>Sizes</h2>
-      <div className="block-content">
+      <div className="block-content flex gap-1">
         <button className="btn btn-primary btn-lg">Large button</button>
-        <button className="btn btn-primary btn-sm">Small button</button>
+        <button className="btn btn-primary btn-sm align-self-center">Small button</button>
       </div>
       <h2>Disabled state</h2>
-      <div className="block-content">
+      <div className="block-content flex gap-1">
         <button className="btn btn-primary btn-lg" disabled>
           Large button
         </button>
-        <button className="btn btn-primary btn-sm" disabled>
+        <button className="btn btn-primary btn-sm align-self-center" disabled>
           Small button
         </button>
       </div>
@@ -106,7 +106,7 @@ export default function Buttons() {
           Button
         </button>
       </div>
-      <div className="block-content flex align-items-center justify-content-md-end">
+      <div className="block-content flex align-items-center justify-content-md-end gap-1">
         <button className="btn btn-primary" type="button">
           Button
         </button>

@@ -1,6 +1,7 @@
 import React from "react";
 import ModalLive from "../../components/Modal/LiveDemo";
 import ModalLive2 from "../../components/Modal/LiveDemo2";
+import ModalBetween from "../../components/Modal/LiveDemo3";
 
 export default function Modal() {
   return (
@@ -53,6 +54,10 @@ export default function Modal() {
         <div className="block-content">
           <ModalLive2 id="example-modal"></ModalLive2>
         </div>
+      </div>
+      <h2>Toggle between modals</h2>
+      <div className="block-content">
+          <ModalBetween></ModalBetween>
       </div>
     </>
   );
