@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Forms() {
   return (
-    <div className="dropdown-menu">
+    <div className="dropdown-menu z-index-1111">
       <form className="p-20 ">
         <div className="mb-10">
           <label htmlFor="example-dropdown-form-email1" className="form-label">

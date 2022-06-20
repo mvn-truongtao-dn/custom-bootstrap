@@ -2,19 +2,22 @@
   width: 300px;
   height: 100vh;
   float: left;
-  padding: 1rem 3rem;
-  z-index: 1200;
+  padding: 0 3rem;
+  z-index: 1201;
   top: 0;
+  background: white;
   overflow: scroll;
   left: 0;
   position: fixed;
-
+  transition: left 0.25s linear;
   .navbar {
-    
     .navbar-title {
       color: map-get($map: $colors, $key: bs-primary-rgba);
     }
     .navbar-item {
+      &:first-child {
+        padding-bottom: 1rem;
+      }
       padding: 0.5rem 0;
       .navbar-link {
         color: map-get($map: $colors, $key: bs-secondary-rgba);
@@ -27,9 +30,13 @@
       }
     }
   }
+  &:not(.show) {
+    left: -300px;
+    transition: left 0.25s linear;
+  }
 }
 @include respond-below(large) {
-  .page-header {
-    left: -300px;
-  }
+  // .page-header {
+  //   left: -300px;
+  // }
 }

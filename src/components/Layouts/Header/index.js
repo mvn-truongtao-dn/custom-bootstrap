@@ -1,24 +1,29 @@
 import React, { useEffect } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
   let location = useLocation();
   const address = location.pathname.slice(1);
-    console.log(address);
+  console.log(address);
   useEffect(() => {
     const array_link = document.querySelectorAll(".navbar-link");
     for (let i in array_link) {
-      if (array_link[i].href === `https://lucent-parfait-d5f01b.netlify.app/${address}`) {
+      if (
+        array_link[i].href ===
+        `https://lucent-parfait-d5f01b.netlify.app/${address}`
+      ) {
         document
           .querySelector(".page-header .active")
           .classList.remove("active");
         document.getElementById(address).classList.add("active");
-        
-    }
+      }
     }
   });
+  const HandleBackDrop = () => {
+    
+  }
   return (
-    <header className="page-header">
+    <header className={`page-header ${props.active ? "show": "hide"}`}>
       <nav className="navbar">
         <ul>
           <li className="navbar-item">
