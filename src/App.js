@@ -47,7 +47,7 @@ function App() {
       ></div>
       <div className={`page-main ${active ? "" : "show"}`}>
         <div className="main-header">
-          <nav className="navbar navbar-light bg-light boder-bottom">
+          <nav className="navbar navbar-light bg-white boder-bottom">
             <div className="container-fluid">
               <button
                 className="navbar-toggle"

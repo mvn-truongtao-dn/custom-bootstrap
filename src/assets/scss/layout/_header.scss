@@ -36,7 +36,7 @@
   }
 }
 @include respond-below(large) {
-  // .page-header {
-  //   left: -300px;
-  // }
+  .page-header {
+    z-index:1222;
+  }
 }
