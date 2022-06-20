@@ -51,7 +51,7 @@ export default function Collapse() {
         <p>
           <a
             href="#collapseExample"
-            className="btn btn-primary"
+            className="btn btn-primary mr-5"
             data-bs-toggle="collapse"
             role="button"
             aria-expanded="false"
@@ -121,7 +121,7 @@ export default function Collapse() {
         <p>
           <a
             href="#multi-collapse-example1"
-            className="btn btn-primary"
+            className="btn btn-primary mr-5"
             data-bs-toggle="collapse"
             role="button"
             aria-expanded="false"
@@ -131,7 +131,7 @@ export default function Collapse() {
             Toggle first element
           </a>
           <button
-            className="btn btn-primary"
+            className="btn btn-primary mr-5"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#multi-collapse-example2"
