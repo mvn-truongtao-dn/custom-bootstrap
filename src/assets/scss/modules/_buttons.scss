@@ -276,3 +276,14 @@
 //    z-index: 1199;
 //  }
 }
+.btn-close-respond {
+  position: absolute;
+  top: 25px;
+  left: 250px;
+  display: none;
+}
+@include respond-below(large) {
+  .btn-close-respond {
+    display: block;
+  }
+}

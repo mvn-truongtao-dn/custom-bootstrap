@@ -28,14 +28,6 @@ export default function LiveToast() {
       document.getElementById(targetActive).classList.remove("show");
       document.getElementById(targetActive).classList.add("hide");
     }, 1000);
-    // setTimeout(() => {
-    //   document.querySelector(`.${target}`).classList.add("showing");
-    // }, 500);
-    // setTimeout(() => {
-    //   document.querySelector(`.${target}`).classList.remove("showing");
-    //   document.querySelector(`.${target}`).classList.remove("show");
-    //   document.querySelector(`.${target}`).classList.add("hide");
-    // }, 1000);
   };
   return (
     <>
@@ -53,6 +45,7 @@ export default function LiveToast() {
           id="live-toast"
           role="alert"
           aria-atomic="true"
+          style={{minWidth:"300px"}}
         >
           <div className="toast-header">
             <img src="" className="rounded me-2" alt="" />

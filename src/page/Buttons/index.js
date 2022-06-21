@@ -4,7 +4,7 @@ export default function Buttons() {
   return (
     <>
       <h2>Examples</h2>
-      <div className="block-content flex gap-1">
+      <div className="block-content flex flex-wrap-wrap gap-1">
         <button className="btn btn-primary">Primary</button>
         <button className="btn btn-secondary">secondary</button>
         <button className="btn btn-success">success</button>
@@ -16,7 +16,7 @@ export default function Buttons() {
         <button className="btn btn-link">Link</button>
       </div>
       <h2>Button tags</h2>
-      <div className="block-content flex gap-1">
+      <div className="block-content flex flex-wrap-wrap gap-1">
         <a href="#" className="btn btn-primary" role="button">
           Link
         </a>
@@ -28,7 +28,7 @@ export default function Buttons() {
         <input className="btn btn-primary" type="reset" value="Reset" />
       </div>
       <h2>Outline buttons</h2>
-      <div className="block-content flex gap-1">
+      <div className="block-content flex flex-wrap-wrap gap-1">
         <button className="btn btn-outline-primary" type="button">
           primary
         </button>

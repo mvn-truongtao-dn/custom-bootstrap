@@ -78,12 +78,20 @@
     }
   }
   &.card-collapse {
-      height: 0;
-      overflow-y: auto;
-      transition: height 0.3s linear;
+    height: 0;
+    overflow-y: auto;
+    transition: height 0.3s linear;
   }
   &.show {
     height: 100px;
     transition: height 0.3s linear;
+  }
 }
+@include respond-below(small) {
+  .col-6 {
+    width: 100% !important;
+  }
+  .card {
+      width: 100% !important;
+  }
 }

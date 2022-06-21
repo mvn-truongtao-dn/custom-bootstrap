@@ -36,13 +36,21 @@ function App() {
   };
   const HandleBackDrop = () => {
     setActive(false);
-  }
+  };
+  const handleClose = () => {
+    setActive(false);
+  };
   return (
     <div className="">
       {/* <Accordion></Accordion> */}
-      <Header active={active}></Header>
+      <Header active={active}>
+        <button
+          className="btn-close btn-close-respond"
+          onClick={handleClose}
+        ></button>
+      </Header>
       <div
-        className={`offcanvas-backdrop-header fade  ${active ? "show": ""}`}
+        className={`offcanvas-backdrop-header fade  ${active ? "show" : ""}`}
         onClick={HandleBackDrop}
       ></div>
       <div className={`page-main ${active ? "" : "show"}`}>

@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 
 export default function Header(props) {
   let location = useLocation();
   const address = location.pathname.slice(1);
   console.log(address);
+
   useEffect(() => {
     const array_link = document.querySelectorAll(".navbar-link");
     for (let i in array_link) {
@@ -19,14 +20,13 @@ export default function Header(props) {
       }
     }
   });
-  const HandleBackDrop = () => {
-    
-  }
+  const HandleBackDrop = () => {};
   return (
-    <header className={`page-header ${props.active ? "show": "hide"}`}>
+    <header className={`page-header ${props.active ? "show" : "hide"}`}>
+      {props.children}
       <nav className="navbar">
         <ul>
-          <li className="navbar-item">
+          <li className="navbar-item flex align-items-center justify-content-between">
             <h3 className="navbar-title">Components</h3>
           </li>
           <li className="navbar-item">
