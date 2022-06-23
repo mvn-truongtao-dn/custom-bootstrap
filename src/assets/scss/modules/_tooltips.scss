@@ -25,7 +25,7 @@
   .popover-arrow {
     &::after,
     &::before {
-      content: "";
+      content: '';
       border-style: solid;
       border-color: transparent;
       position: absolute;
@@ -155,7 +155,10 @@
       transform: translate(-15%, -110%);
     }
     &.bs-popover-end {
-      transform: translate(55%, -25px);
+      // transform: translate(55%, -25px);
+      top: -20px;
+      left: 100%;
+      transform: translate(10px);
     }
     &.bs-popover-start {
       top: 0;

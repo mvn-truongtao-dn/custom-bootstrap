@@ -11,7 +11,7 @@ export default function PopoverItem(props) {
   return (
     <div className="tooltip position-relative">
       <button
-        className="btn btn-secondary mr-10"
+        className="btn btn-secondary"
         type="button"
         data-bs-container="body"
         data-bs-toggle="popover"
